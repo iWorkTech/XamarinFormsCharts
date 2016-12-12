@@ -1,0 +1,93 @@
+D:\Charts\Charts\Charts\obj\Debug\Charts.csprojResolveAssemblyReference.cache
+D:\Charts\Charts\Charts\obj\Debug\Charts.MainPage.xaml.g.cs
+D:\Charts\Charts\Charts\obj\Debug\Charts.App.xaml.g.cs
+D:\Charts\Charts\Charts\obj\Debug\Charts.PieChartPage.xaml.g.cs
+D:\Charts\Charts\Charts\bin\Debug\Charts.dll.config
+D:\Charts\Charts\Charts\bin\Debug\Charts.dll
+D:\Charts\Charts\Charts\bin\Debug\Charts.pdb
+D:\Charts\Charts\Charts\bin\Debug\Cross.Pie.Forms.dll
+D:\Charts\Charts\Charts\bin\Debug\ExifLib.dll
+D:\Charts\Charts\Charts\bin\Debug\Mono.Android.dll
+D:\Charts\Charts\Charts\bin\Debug\NControl.dll
+D:\Charts\Charts\Charts\bin\Debug\NGraphics.dll
+D:\Charts\Charts\Charts\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.dll
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.iOS.dll
+D:\Charts\Charts\Charts\bin\Debug\System.dll
+D:\Charts\Charts\Charts\bin\Debug\System.Xml.dll
+D:\Charts\Charts\Charts\bin\Debug\System.Core.dll
+D:\Charts\Charts\Charts\bin\Debug\Mono.Dynamic.Interpreter.dll
+D:\Charts\Charts\Charts\bin\Debug\Mono.Android.xml
+D:\Charts\Charts\Charts\bin\Debug\NGraphics.xml
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.xml
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Charts\Charts\Charts\bin\Debug\Xamarin.iOS.xml
+D:\Charts\Charts\Charts\obj\Debug\Charts.dll
+D:\Charts\Charts\Charts\obj\Debug\Charts.pdb
+D:\Charts\Charts\Charts\obj\Debug\Charts.dll.mdb
+D:\Charts\Charts\Charts\bin\Debug\Charts.dll.mdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Charts.dll.config
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Charts.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Charts.pdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\ExifLib.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Mono.Android.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.iOS.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\System.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\System.Xml.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\System.Core.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Mono.Dynamic.Interpreter.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Mono.Android.xml
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Xamarin.iOS.xml
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\obj\Debug\Charts.MainPage.xaml.g.cs
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\obj\Debug\Charts.App.xaml.g.cs
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\obj\Debug\Charts.BarChartPage.xaml.g.cs
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\obj\Debug\Charts.dll
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\obj\Debug\Charts.pdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\obj\Debug\Charts.dll.mdb
+C:\Users\ashwini.h\Desktop\Charts\Charts\Charts\bin\Debug\Charts.dll.mdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Charts.dll.config
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Charts.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Charts.pdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\ExifLib.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Mono.Android.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.iOS.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\System.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\System.Xml.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\System.Core.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Mono.Dynamic.Interpreter.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Mono.Android.xml
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Core.xml
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Xamarin.iOS.xml
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.MainPage.xaml.g.cs
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.App.xaml.g.cs
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.BarChartPage.xaml.g.cs
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.dll
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.pdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.dll.mdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Charts.dll.mdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.dll.mdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Charts.dll.mdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\obj\Debug\Charts.dll.mdb
+D:\Xamarin R & D demo\Charts\Charts\Charts\bin\Debug\Charts.dll.mdb
