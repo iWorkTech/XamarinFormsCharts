@@ -113,33 +113,13 @@ I can achieve by using two methods. These are :
 Using the highlighter code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
 •	X - Title
 •	Y – Title
+
 ```
-  <charting:Chart x:Name="MonthlySalesChart" 
-                        Spacing="50"
-                        WidthRequest="600"
-                        HeightRequest="600"
-                        Color="Purple"
-```
-![Graph1] (http://52.77.35.210:83/Media/Default/images/githubimages/graph1.png)
+![Code1] (http://52.77.35.210:83/Media/Default/images/githubimages/code1.png)
+![Code2] (http://52.77.35.210:83/Media/Default/images/githubimages/code2.png)
+![Code3] (http://52.77.35.210:83/Media/Default/images/githubimages/code3.png)
+![Code4] (http://52.77.35.210:83/Media/Default/images/githubimages/code4.png)
 ```    
-                        VerticalOptions="FillAndExpand">
-          <charting:Chart.Series>
-            <charting:Series Type="Bar" Color="Red">
-              <charting:Series.Points>
-                <charting:DataPoint Label="Jan" Value="25" />
-                <charting:DataPoint Label="Feb" Value="40" />
-                <charting:DataPoint Label="March" Value="45" />
-              </charting:Series.Points>
-            </charting:Series>
-            <charting:Series Type="Bar" Color="Blue">
-              <charting:Series.Points>
-                <charting:DataPoint Label="Jan" Value="30" />
-                <charting:DataPoint Label="Feb" Value="35" />
-                <charting:DataPoint Label="March" Value="40" />
-              </charting:Series.Points>
-            </charting:Series>
-          </charting:Chart.Series>
-        </charting:Chart>
-```
+                       
 
 
