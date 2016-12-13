@@ -120,8 +120,7 @@ Using the highlighter code, one can plot the bar chart is displayed as in Fig 2.
                         HeightRequest="600"
                         Color="Purple"
 ```
-                       > XTitle="Year"
-                       > YTitle="Progress"
+![Graph1] (http://52.77.35.210:83/Media/Default/images/githubimages/graph1.png)
 ```    
                         VerticalOptions="FillAndExpand">
           <charting:Chart.Series>
