@@ -99,6 +99,7 @@ int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
         }
  ```
 Using the above XAML code we have generated the following graph.
+![Graph1] (http://52.77.35.210:83/Media/Default/images/githubimages/graph1.png)
 
 #### Using IWORKTECH’s utility code
 As a developer, I want to add labels to the X and Y coordinates. 
@@ -107,13 +108,14 @@ I can achieve by using two methods. These are :
 - Method 1 – change in XMAL (Explained in the document) 
 - Method 2 – change in C#
 
-_Brief:_
+**Brief:**
 
 Using the highlighter code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
 •	X - Title
 •	Y – Title
 
 ```
+
 
 
 
