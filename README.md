@@ -14,6 +14,8 @@ This code helps a Xamarin developer to embed a code in his/her code.  It allows 
 
 #### Available on 
 
+![icons] (https://thedistance.co.uk/wp-content/uploads/2015/10/ios.android.icon_.jpg)
+
 ### Why do I need it? 
 As a developer, I need to add additional features like, 
 - labeling of X- and Y- axis. 
