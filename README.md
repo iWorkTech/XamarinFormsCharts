@@ -115,7 +115,32 @@ Using the highlighter code, one can plot the bar chart is displayed as in Fig 2.
 •	Y – Title
 
 ```
-
+  <charting:Chart x:Name="MonthlySalesChart" 
+                        Spacing="50"
+                        WidthRequest="600"
+                        HeightRequest="600"
+                        Color="Purple"
+                        `XTitle="Year"`
+                        `YTitle="Progress"`
+                        VerticalOptions="FillAndExpand">
+          <charting:Chart.Series>
+            <charting:Series Type="Bar" Color="Red">
+              <charting:Series.Points>
+                <charting:DataPoint Label="Jan" Value="25" />
+                <charting:DataPoint Label="Feb" Value="40" />
+                <charting:DataPoint Label="March" Value="45" />
+              </charting:Series.Points>
+            </charting:Series>
+            <charting:Series Type="Bar" Color="Blue">
+              <charting:Series.Points>
+                <charting:DataPoint Label="Jan" Value="30" />
+                <charting:DataPoint Label="Feb" Value="35" />
+                <charting:DataPoint Label="March" Value="40" />
+              </charting:Series.Points>
+            </charting:Series>
+          </charting:Chart.Series>
+        </charting:Chart>
+```
 
 
 
