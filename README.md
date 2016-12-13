@@ -16,3 +16,79 @@ This code helps a Xamarin developer to embed a code in his/her code.  It allows 
 2.	Available on 
 
 Android and iOS
+
+
+ 
+ 
+
+ 
+  
+  
+   
+    
+    
+    <charting:Chart.Series>
+
+                <charting:Series
+    Type="Bar"
+    Color="Red">
+
+                  <charting:Series.Points>
+
+                    <charting:DataPoint
+    Label="Jan"
+    Value="25"
+    />
+
+                    <charting:DataPoint
+    Label="Feb"
+    Value="40"
+    />
+
+                    <charting:DataPoint
+    Label="March"
+    Value="45"
+    />
+
+                  </charting:Series.Points>
+
+                </charting:Series>
+
+                <charting:Series
+    Type="Bar"
+    Color="Blue">
+
+                  <charting:Series.Points>
+
+                    <charting:DataPoint
+    Label="Jan"
+    Value="30"
+    />
+
+                    <charting:DataPoint
+    Label="Feb"
+    Value="35"
+    />
+
+                    <charting:DataPoint
+    Label="March"
+    Value="40"
+    />
+
+                  </charting:Series.Points>
+
+                </charting:Series>
+
+              </charting:Chart.Series>
+
+     
+
+     
+
+    
+
+    
+   
+  
+  
+ 
