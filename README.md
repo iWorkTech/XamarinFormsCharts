@@ -22,7 +22,7 @@ As a developer, I need to add additional features like,
 ##### Without using IWORKTECH’s utility code
 
 In a Xamarin form, normally using the following code one can provide a bar or line chart functionalities/features. 
-```sh
+```
 <charting:Chart.Series>
             <charting:Series Type="Bar" Color="Red">
               <charting:Series.Points>
@@ -47,8 +47,7 @@ In a Xamarin form, normally using the following code one can provide a bar or li
                         VerticalOptions="FillAndExpand">
 
         </charting:Chart>
-        
-        chart.cs
+         chart.cs
          private float DrawGrid(double highestValue)
         {
             int noOfHorizontalLines = 4;
@@ -100,6 +99,7 @@ int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
  ```
 Using the above XAML code we have generated the following graph.
 ![Graph1] (http://52.77.35.210:83/Media/Default/images/githubimages/graph1.png)
+Fig 1- Progress chart in the sales without X and Y axis labels
 
 #### Using IWORKTECH’s utility code
 As a developer, I want to add labels to the X and Y coordinates. 
@@ -110,7 +110,7 @@ I can achieve by using two methods. These are :
 
 **Brief:**
 
-Using the highlighter code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
+Using the following code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
 
 - X - Title
 - Y – Title
@@ -227,5 +227,19 @@ chart.cs
         }
 ```
 
+ Using the above code the following graph gets generated. 
+![Graph2] (http://52.77.35.210:83/Media/Default/images/githubimages/graph2.png)
+Fig 2- Progress chart in the sales with X and Y axis labels
+
+To get this code readymade take the following steps:
+
+- Step 1-  Go to GitHub, Down load code using URL https://github.com/iWorkTech/XamarinFormsCharts
+- Step 2-  Unzip the code and open the solution file in Visual Studio 
+- Step 3 – Open tab < BarChartPage.xaml > code 
+- Step 4 – Make changes shown in highlighted nodes of XAML. 
+- Step 5 – Run the code  
+
+
+### Method 2 –  C# code (Not in the scope of this document)
 
 
