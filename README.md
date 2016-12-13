@@ -115,7 +115,117 @@ Using the highlighter code, one can plot the bar chart is displayed as in Fig 2.
 - X - Title
 - Y – Title
 
+```
+  <charting: Chart x: Name="MonthlySalesChart" 
+                        Spacing="50"
+                        WidthRequest="600"
+                        HeightRequest="600"
+                        Color="Purple"
+                        `XTitle="Year"`
+                        `YTitle="Progress"`
+                        VerticalOptions="FillAndExpand">
+          <charting: Chart.Series>
+            <charting:Series Type="Bar" Color="Red">
+              <charting:Series.Points>
+                <charting:DataPoint Label="Jan" Value="25" />
+                <charting:DataPoint Label="Feb" Value="40" />
+                <charting:DataPoint Label="March" Value="45" />
+              </charting:Series.Points>
+            </charting:Series>
+            <charting:Series Type="Bar" Color="Blue">
+              <charting:Series.Points>
+                <charting:DataPoint Label="Jan" Value="30" />
+                <charting:DataPoint Label="Feb" Value="35" />
+                <charting:DataPoint Label="March" Value="40" />
+              </charting:Series.Points>
+            </charting:Series>
+          </charting:Chart.Series>
+        </charting:Chart>
 
+chart.cs
+
+        public static readonly BindableProperty XTitleProperty = BindableProperty.Create("XTitle", typeof(string), typeof(Chart), "XAxis", BindingMode.OneWay, null, null, null, null);
+
+        public static readonly BindableProperty YTitleProperty = BindableProperty.Create("YTitle", typeof(string), typeof(Chart), "YAxis", BindingMode.OneWay, null, null, null, null);
+        
+         public string XTitle
+        {
+            get
+            {
+                return (string)base.GetValue(Chart.XTitleProperty);
+            }
+            set
+            {
+                base.SetValue(Chart.XTitleProperty, value);
+            }
+        }
+        public string YTitle
+        {
+            get
+            {
+                return (string)base.GetValue(Chart.YTitleProperty);
+            }
+            set
+            {
+                base.SetValue(Chart.YTitleProperty, value);
+            }
+        }
+     private float DrawGrid(double highestValue)
+        {
+            int noOfHorizontalLines = 4;
+            double quarterValue = highestValue / 4;
+            double valueOfPart = ((int)Math.Round(quarterValue / 10.0)) * 10;
+            if (valueOfPart < quarterValue)
+                noOfHorizontalLines = 5;
+            double quarterHeight = (HeightRequest - PADDING_TOP) / noOfHorizontalLines;
+            // Horizontal lines and Y-value labels
+            OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData((valueOfPart * noOfHorizontalLines).ToString(), 10, PADDING_TOP + 5) });
+            for (int i = 1; i <= noOfHorizontalLines; i++)
+{
+  if (Grid)
+                {
+                    OnDrawGridLine(this, new DrawEventArgs<DoubleDrawingData>() { Data = new DoubleDrawingData(PADDING_LEFT, PADDING_TOP + (quarterHeight * i), WidthRequest, PADDING_TOP + (quarterHeight * i), 0) });
+                }
+                double currentValue = (valueOfPart * noOfHorizontalLines) - (valueOfPart * i);
+                OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(currentValue.ToString(), 10, PADDING_TOP + (quarterHeight * i) + 5) });
+            }
+            
+            OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(YTitle, 5, (quarterHeight * noOfHorizontalLines)/2+15) });
+
+            return (float)valueOfPart * noOfHorizontalLines;
+        }
+        
+         private void DrawLabels(double highestValue, double widthPerBar, DataPointCollection points)
+        {
+            int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
+            if (noOfBarSeries == 0)
+                noOfBarSeries = 1;
+            double widthOfAllBars = noOfBarSeries * widthPerBar;
+            double widthIterator = 2 + PADDING_LEFT;
+
+            for (int i = 0; i < points.Count; i++)
+            {
+                OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(points[i].Label, (widthIterator + widthOfAllBars / 2) - (points[i].Label.Length * 4), HeightRequest + 25) });
+                widthIterator += widthPerBar * noOfBarSeries + Spacing;
+            }
+           
+            OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(XTitle, widthIterator/2, HeightRequest + 55) });
+            
+        }
+
+//in android chartsurface.cs
+        
+        public ChartSurface(Context context, Chart chart, AndroidColor color, AndroidColor[] colors)
+            : base(context)
+        {
+            SetWillNotDraw(false);
+
+            Chart = chart;
+            Paint = new Paint() { Color = color, StrokeWidth = 2 };
+            Paint.TextSize = 20.0f;
+            Colors = colors;
+        }
+```
 
 
 
