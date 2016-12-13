@@ -120,9 +120,9 @@ Using the highlighter code, one can plot the bar chart is displayed as in Fig 2.
                         HeightRequest="600"
                         Color="Purple"
                         ```
-                        XTitle="Year"
-                        YTitle="Progress
-                    ```    
+                      **XTitle="Year"**
+                      **YTitle="Progress"**
+ ```    
                         VerticalOptions="FillAndExpand">
           <charting:Chart.Series>
             <charting:Series Type="Bar" Color="Red">
@@ -141,6 +141,6 @@ Using the highlighter code, one can plot the bar chart is displayed as in Fig 2.
             </charting:Series>
           </charting:Chart.Series>
         </charting:Chart>
-
+```
 
 
