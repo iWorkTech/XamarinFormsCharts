@@ -97,10 +97,16 @@ int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
             Paint = new Paint() { Color = color, StrokeWidth = 2 };
             Colors = colors;
         }
-      
-'''
-
+ ```
 Using the above XAML code we have generated the following graph.
+
+#### Using IWORKTECH’s utility code
+As a developer, I want to add labels to the X and Y coordinates. 
+
+I can achieve by using two methods. These are :
+- Method 1 – change in XMAL (Explained in the document) 
+- Method 2 – change in C#
+
 
 
 
