@@ -10,6 +10,8 @@ In this document, we have several illustration with demo code. Developer should 
 
 1.	 Plot Bar and Line chart code
 Objective: 
+
 This code helps a Xamarin developer to embed a code in his/her code.  It allows plotting of a bar or a line chart quickly. On the graph, currently in the Xamarin.Form, we can’t change the font size and labels of the X- and Y- axis. This utility addresses these issues by allowing you to do make necessary changes. 
 
 2.	Available on 
+Android and iOS
