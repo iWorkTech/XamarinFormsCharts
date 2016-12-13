@@ -1,5 +1,5 @@
 #IWORKTECH and Xamarin.Forms 
-[![N|Solid](http://www.iworktech.com/Themes/iWorkTheme/Content/iwork_logo.png)](https://nodesource.com/products/nsolid)
+[(http://www.iworktech.com/Themes/iWorkTheme/Content/iwork_logo.png)]
 We have worked on Xamarin forms for the last several years. While working on different apps, we mustered hands on experience on the Xamarin platform and code that was share cross projects. We are sharing this code Xamarin developers and open source community to for free. 
 This code is available for use on a “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND. 
 This document is authored by members of IWORKTECH’s mobility team.  Please send all feedback and inquiries to info@iworktech.com. 
