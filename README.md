@@ -1,6 +1,5 @@
 ![iWorktech](http://www.iworktech.com/Themes/iWorkTheme/Content/iwork_logo.png)
 # IWORKTECH and Xamarin.Forms 
-
 We have worked on Xamarin forms for the last several years. While working on different apps, we mustered hands on experience on the Xamarin platform and code that was share cross projects. We are sharing this code Xamarin developers and open source community to for free. 
 This code is available for use on a “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND. 
 This document is authored by members of IWORKTECH’s mobility team.  Please send all feedback and inquiries to info@iworktech.com. 
@@ -24,7 +23,7 @@ As a developer, I need to add additional features like,
 ##### Without using IWORKTECH’s utility code
 
 In a Xamarin form, normally using the following code one can provide a bar or line chart functionalities/features. 
-
+```sh
   <charting:Chart x:Name="MonthlySalesChart" 
                         Spacing="50"
                         WidthRequest="600"
@@ -50,6 +49,7 @@ In a Xamarin form, normally using the following code one can provide a bar or li
             </charting:Series>
           </charting:Chart.Series>
         </charting:Chart>
+        ,,,
 		chart.cs
 		public static readonly BindableProperty XTitleProperty = BindableProperty.Create("XTitle", typeof(string), typeof(Chart), "XAxis", BindingMode.OneWay, null, null, null, null);
 
@@ -134,6 +134,4 @@ In a Xamarin form, normally using the following code one can provide a bar or li
             Paint.TextSize = 20.0f;
 			Colors = colors;
 		}
-
-
-
+'''
