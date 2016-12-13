@@ -113,6 +113,7 @@ I can achieve by using two methods. These are :
 Using the highlighter code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
 - X - Title
 - Y – Title
+
 ![Code1] (http://52.77.35.210:83/Media/Default/images/githubimages/code1.png)
 ![Code2] (http://52.77.35.210:83/Media/Default/images/githubimages/code2.png)
 ![Code3] (http://52.77.35.210:83/Media/Default/images/githubimages/code3.png)
