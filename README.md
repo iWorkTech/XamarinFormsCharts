@@ -107,6 +107,13 @@ I can achieve by using two methods. These are :
 - Method 1 – change in XMAL (Explained in the document) 
 - Method 2 – change in C#
 
+_Brief:_
+
+Using the highlighter code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
+•	X - Title
+•	Y – Title
+
+```
 
 
 
