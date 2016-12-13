@@ -100,3 +100,7 @@ int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
       
 '''
 
+Using the above XAML code we have generated the following graph.
+
+
+
