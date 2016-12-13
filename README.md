@@ -123,8 +123,8 @@ Using the following code, one can plot the bar chart is displayed as in Fig 2. T
                         WidthRequest="600"
                         HeightRequest="600"
                         Color="Purple"
-                        `XTitle="Year"`
-                        `YTitle="Progress"`
+                        XTitle="Year"
+                        YTitle="Progress"
                         VerticalOptions="FillAndExpand">
           <charting: Chart.Series>
             <charting:Series Type="Bar" Color="Red">
