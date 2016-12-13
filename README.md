@@ -1,5 +1,6 @@
 ![iWorktech](http://www.iworktech.com/Themes/iWorkTheme/Content/iwork_logo.png)
 # IWORKTECH and Xamarin.Forms 
+
 We have worked on Xamarin forms for the last several years. While working on different apps, we mustered hands on experience on the Xamarin platform and code that was share cross projects. We are sharing this code Xamarin developers and open source community to for free. 
 This code is available for use on a “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND. 
 This document is authored by members of IWORKTECH’s mobility team.  Please send all feedback and inquiries to info@iworktech.com. 
@@ -23,7 +24,16 @@ As a developer, I need to add additional features like,
 ##### Without using IWORKTECH’s utility code
 
 In a Xamarin form, normally using the following code one can provide a bar or line chart functionalities/features. 
-<charting:Chart.Series>
+
+  <charting:Chart x:Name="MonthlySalesChart" 
+                        Spacing="50"
+                        WidthRequest="600"
+                        HeightRequest="600"
+                        Color="Purple"
+                        XTitle="Year"
+                        YTitle="Progress"
+                        VerticalOptions="FillAndExpand">
+          <charting:Chart.Series>
             <charting:Series Type="Bar" Color="Red">
               <charting:Series.Points>
                 <charting:DataPoint Label="Jan" Value="25" />
@@ -39,26 +49,46 @@ In a Xamarin form, normally using the following code one can provide a bar or li
               </charting:Series.Points>
             </charting:Series>
           </charting:Chart.Series>
-<charting:Chart x:Name="MonthlySalesChart" 
-                        Spacing="50"
-                        WidthRequest="600"
-                        HeightRequest="600"
-                        Color="Purple"
-                        VerticalOptions="FillAndExpand">
         </charting:Chart>
-        
-        chart.cs
-         private float DrawGrid(double highestValue)
+		chart.cs
+		public static readonly BindableProperty XTitleProperty = BindableProperty.Create("XTitle", typeof(string), typeof(Chart), "XAxis", BindingMode.OneWay, null, null, null, null);
+
+        public static readonly BindableProperty YTitleProperty = BindableProperty.Create("YTitle", typeof(string), typeof(Chart), "YAxis", BindingMode.OneWay, null, null, null, null);
+		
+		 public string XTitle
+        {
+            get
+            {
+                return (string)base.GetValue(Chart.XTitleProperty);
+            }
+            set
+            {
+                base.SetValue(Chart.XTitleProperty, value);
+            }
+        }
+        public string YTitle
+        {
+            get
+            {
+                return (string)base.GetValue(Chart.YTitleProperty);
+            }
+            set
+            {
+                base.SetValue(Chart.YTitleProperty, value);
+            }
+        }
+		
+		 private float DrawGrid(double highestValue)
         {
             int noOfHorizontalLines = 4;
             double quarterValue = highestValue / 4;
-            double valueOfPart = ((int)Math.Round(quarterValue / 10.0)) *10;
+            double valueOfPart = ((int)Math.Round(quarterValue / 10.0)) * 10;
             if (valueOfPart < quarterValue)
                 noOfHorizontalLines = 5;
             double quarterHeight = (HeightRequest - PADDING_TOP) / noOfHorizontalLines;
-            
+
             // Horizontal lines and Y-value labels
-            OnDrawText (this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData((valueOfPart * noOfHorizontalLines).ToString(), 10, PADDING_TOP + 5) });
+            OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData((valueOfPart * noOfHorizontalLines).ToString(), 10, PADDING_TOP + 5) });
             for (int i = 1; i <= noOfHorizontalLines; i++)
             {
                 if (Grid)
@@ -68,13 +98,15 @@ In a Xamarin form, normally using the following code one can provide a bar or li
                 double currentValue = (valueOfPart * noOfHorizontalLines) - (valueOfPart * i);
                 OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(currentValue.ToString(), 10, PADDING_TOP + (quarterHeight * i) + 5) });
             }
-                        return (float)valueOfPart * noOfHorizontalLines;
-        }
-        
-         private void DrawLabels(double highestValue, double widthPerBar, DataPointCollection points)
-{
+            
+            OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(YTitle, 5, (quarterHeight * noOfHorizontalLines)/2+15) });
 
-int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
+            return (float)valueOfPart * noOfHorizontalLines;
+        }
+		
+		 private void DrawLabels(double highestValue, double widthPerBar, DataPointCollection points)
+        {
+            int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
             if (noOfBarSeries == 0)
                 noOfBarSeries = 1;
             double widthOfAllBars = noOfBarSeries * widthPerBar;
@@ -85,16 +117,23 @@ int noOfBarSeries = Series.Count(s => s.Type == ChartType.Bar);
                 OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(points[i].Label, (widthIterator + widthOfAllBars / 2) - (points[i].Label.Length * 4), HeightRequest + 25) });
                 widthIterator += widthPerBar * noOfBarSeries + Spacing;
             }
-                 
-        //in android chartsurface.cs
-        
-        public ChartSurface(Context context, Chart chart, AndroidColor color, AndroidColor[] colors)
-            : base(context)
-        {
-            SetWillNotDraw(false);
-            Chart = chart;
-            Paint = new Paint() { Color = color, StrokeWidth = 2 };
-            Colors = colors;
+           
+            OnDrawText(this, new DrawEventArgs<TextDrawingData>() { Data = new TextDrawingData(XTitle, widthIterator/2, HeightRequest + 55) });
+            
         }
+		
+		//in android chartsurface.cs
+		
+		public ChartSurface(Context context, Chart chart, AndroidColor color, AndroidColor[] colors)
+			: base(context)
+		{
+			SetWillNotDraw(false);
+
+			Chart = chart;
+			Paint = new Paint() { Color = color, StrokeWidth = 2 };
+            Paint.TextSize = 20.0f;
+			Colors = colors;
+		}
+
 
 
