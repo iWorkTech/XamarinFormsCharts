@@ -113,14 +113,16 @@ I can achieve by using two methods. These are :
 Using the highlighter code, one can plot the bar chart is displayed as in Fig 2. The bar chart has now:
 •	X - Title
 •	Y – Title
-
+```
   <charting:Chart x:Name="MonthlySalesChart" 
                         Spacing="50"
                         WidthRequest="600"
                         HeightRequest="600"
                         Color="Purple"
-                        `XTitle="Year"`
-                        `YTitle="Progress`
+                        ```
+                        XTitle="Year"
+                        YTitle="Progress
+                    ```    
                         VerticalOptions="FillAndExpand">
           <charting:Chart.Series>
             <charting:Series Type="Bar" Color="Red">
