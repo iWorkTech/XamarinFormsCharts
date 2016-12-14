@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-
+using NControl.Droid;
 
 
 namespace Charts.Droid
@@ -17,7 +17,7 @@ namespace Charts.Droid
             base.OnCreate(bundle);
            
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            
+            NControlViewRenderer.Init();
             LoadApplication(new App());
         }
     }

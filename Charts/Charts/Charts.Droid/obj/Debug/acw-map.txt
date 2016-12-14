@@ -54,6 +54,10 @@ com.refractored.monodroidtoolkit.VerticalTextView, com.refractored.monodroidtool
 com.refractored.monodroidtoolkit.VerticalTextView, com.refractored.monodroidtoolkit, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null;md50065d061f307df6c62d57466d7de72e9.VerticalTextView
 com.refractored.monodroidtoolkit.VerticalTextView;md50065d061f307df6c62d57466d7de72e9.VerticalTextView
 com.refractored.monodroidtoolkit.VerticalTextView;md50065d061f307df6c62d57466d7de72e9.VerticalTextView
+NControl.Droid.NControlViewRenderer, NControl.Droid;md5a68cad641f6a8598309a3c8982c24722.NControlViewRenderer
+NControl.Droid.NControlViewRenderer, NControl.Droid, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5a68cad641f6a8598309a3c8982c24722.NControlViewRenderer
+NControl.Droid.NControlViewRenderer;md5a68cad641f6a8598309a3c8982c24722.NControlViewRenderer
+ncontrol.droid.NControlViewRenderer;md5a68cad641f6a8598309a3c8982c24722.NControlViewRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

@@ -52,7 +52,9 @@ namespace Charts.Controls
             Chart.OnDrawLine -= _chart_OnDrawLine;
             Chart.OnDrawLine += _chart_OnDrawLine;
             Chart.OnDrawText -= _chart_OnDrawText;
-            Chart.OnDrawText += _chart_OnDrawText;          
+            Chart.OnDrawText += _chart_OnDrawText;
+            Chart.OnDrawPie -= _chart_OnDrawPie;
+            Chart.OnDrawPie += _chart_OnDrawPie;
         }
 
         /// <summary>
@@ -142,7 +144,33 @@ namespace Charts.Controls
                 g.DrawPath(CGPathDrawingMode.FillStroke);
             }
         }
-                
+
+        /// <summary>
+        /// _chart_s the on draw pie.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The e.</param>
+        private void _chart_OnDrawPie(object sender, Chart.DrawEventArgs<PieDrawingData> e)
+        {
+            double totalDegrees = 0;
+            for (var i = 0; i < e.Data.Percentages.Length; i++)
+            {
+                var degrees = e.Data.Percentages[i];
+                using (var g = UIGraphics.GetCurrentContext())
+                {
+                    g.SetLineWidth(2);
+                    Colors[i].SetFill();
+                    Colors[i].SetStroke();
+                    g.MoveTo((float)e.Data.X, (float)e.Data.Y);
+                    g.AddArc((float)e.Data.X, (float)e.Data.Y, (float)e.Data.Size,
+                             (float)MathHelper.Deg2Rad(360 - totalDegrees - degrees), (float)MathHelper.Deg2Rad(360 - totalDegrees), false);
+                    g.DrawPath(CGPathDrawingMode.FillStroke);
+                }
+
+                totalDegrees += degrees;
+            }
+        }
+
         /// <summary>
         /// _chart_s the on draw text.
         /// </summary>

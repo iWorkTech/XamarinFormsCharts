@@ -13,7 +13,7 @@ namespace Charts
         {
             InitializeComponent();
 
-            MainPage = new Charts.BarChartPage();
+            MainPage = new Charts.PieChartPage();
 
         }
 

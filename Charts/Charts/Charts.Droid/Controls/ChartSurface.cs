@@ -42,7 +42,6 @@ namespace Charts.Controls
 
 			Chart = chart;
 			Paint = new Paint() { Color = color, StrokeWidth = 2 };
-            Paint.TextSize = 20.0f;
 			Colors = colors;
 		}
 
@@ -66,7 +65,9 @@ namespace Charts.Controls
 			Chart.OnDrawLine -= _chart_OnDrawLine;
 			Chart.OnDrawLine += _chart_OnDrawLine;
 			Chart.OnDrawText -= _chart_OnDrawText;
-			Chart.OnDrawText += _chart_OnDrawText;			
+			Chart.OnDrawText += _chart_OnDrawText;
+			Chart.OnDrawPie -= _chart_OnDrawPie;
+			Chart.OnDrawPie += _chart_OnDrawPie;
 
 			Chart.DrawChart();
 		}
@@ -120,6 +121,23 @@ namespace Charts.Controls
 		{
 			Canvas.DrawText(e.Data.Text, (float)e.Data.X, (float)e.Data.Y, Paint);
 		}
-		
+
+		/// <summary>
+		/// _chart_s the on draw pie.
+		/// </summary>
+		/// <param name="sender">The sender.</param>
+		/// <param name="e">The e.</param>
+		void _chart_OnDrawPie(object sender, Chart.DrawEventArgs<PieDrawingData> e)
+		{
+			double pieDegrees = 360;
+			double size = ((e.Data.X > e.Data.Y) ? e.Data.Y * 2 : e.Data.X * 2);
+			for(int i = 0; i < e.Data.Percentages.Length; i++)
+			{
+				double value = e.Data.Percentages[i];
+
+				Canvas.DrawArc(new RectF(0, 0, (float)size, (float)size), 0, (float)pieDegrees, true, new Paint() { Color = Colors[i] });
+				pieDegrees -= value;
+			}
+		}
 	}
 }

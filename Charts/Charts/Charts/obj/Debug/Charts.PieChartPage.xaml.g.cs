@@ -17,7 +17,7 @@ namespace Charts {
     public partial class PieChartPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Charts.Controls.Chart MonthlySalesChart;
+        private global::Charts.Controls.Chart BarChart;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Charts.Controls.Chart LineChart;
@@ -25,7 +25,7 @@ namespace Charts {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(PieChartPage));
-            MonthlySalesChart = this.FindByName<global::Charts.Controls.Chart>("MonthlySalesChart");
+            BarChart = this.FindByName<global::Charts.Controls.Chart>("BarChart");
             LineChart = this.FindByName<global::Charts.Controls.Chart>("LineChart");
         }
     }
