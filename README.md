@@ -109,7 +109,7 @@ Fig 1- Progress chart in the sales without X and Y axis labels
 As a developer, I want to add labels to the X and Y coordinates. 
 
 I can achieve by using two methods. These are :
-- Method 1 – change in XMAL (Explained in the document) 
+- Method 1 – change in XMAL
 - Method 2 – change in C#
 
 **Brief:**
@@ -250,6 +250,7 @@ Fig 2- Progress chart in the sales with X and Y axis labels
 
 ## Method 2 –  C# code:
 
+```
 using Charts.Controls;
 using System;
 using System.Collections.Generic;
@@ -354,5 +355,16 @@ namespace Charts
         }
     }
 }
+```
+Using the above code the following graph gets generated. 
+ 
+![Graph3] (http://52.77.35.210:83/Media/Default/images/githubimages/graph2.png)
+
+Fig 3- Progress chart in the sales with X and Y axis labels
 
 
+**To get this code readymade take the following steps:**
+
+- Step 1-  Go to GitHub, Down load code using URL https://github.com/iWorkTech/XamarinFormsCharts
+- Step 2-  Unzip the code and open the solution file in Visual Studio 
+- Step 3 – Run the code  
