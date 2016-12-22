@@ -119,6 +119,8 @@ Using the following code, one can plot the bar chart is displayed as in Fig 2. T
 - X - Title
 - Y – Title
 
+## Method 1  –  XAML code:
+
 ```
   <charting: Chart x: Name="MonthlySalesChart" 
                         Spacing="50"
